@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #141721;
+  color: white;
+
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1340px;
+  height: 1009px;
+
+  /* gap: 29px; */
+
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+  padding: 24px 40px;
+  background-color: #141721;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+
+
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 1174px;
+  height: 48px;
+
+  gap: 141px;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  white-space: nowrap;
+  flex: 1;
+  font-family: Poppins;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 7%;
+
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 32px;
+
+
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 150;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  
+}
+
+/* .nav-link:hover,
+.nav-link.active {
+  color: white;
+} */
+
+.search-container {
+  flex: 1;
+  max-width: 400px;
+  width: 374.5777893066406;
+  height: 48;
+  padding-top: 8px;
+  padding-right: 100px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 37px;
+}
+
+/* Main Content */
+.main-content {
+
+  margin: 0 auto;
+  width: 1170px;
+  height: 400px;
+  opacity: 1;
+  border-radius: 12px;
+}
+
+/* Section Styles */
+.explore-section {
+  margin-bottom: 0px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: white;
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 24px 0 24px 0;
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 112.99999999999999%;
+
+}
+
+/* New Release Section */
+.new-release-section {
+  margin-bottom: 60px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  /* margin-top: 32px; */
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1920px) {
+  .movie-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Basic responsive for smaller screens (optional, as responsive is not required) */
+@media (max-width: 1600px) {
+  /* .header {
+    padding: 24px 60px;
+  } */
+  
+  
+  .movie-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .movie-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
